@@ -3,10 +3,7 @@ package com.parking.apiparking.controller;
 import com.parking.apiparking.entity.Car;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import com.parking.apiparking.services.ParkingService;
 
 import java.util.List;
@@ -30,7 +27,7 @@ public class ParkingController {
 
     //POST: http://dominio/parkings/cars
     @PostMapping("/cars")
-    public ResponseEntity<Car> addCars(Car car){
+    public ResponseEntity<Car> addCars(@RequestBody Car car){
        this.parkingService.addCar(car);
        return new ResponseEntity<>(car, HttpStatus.CREATED);
     }

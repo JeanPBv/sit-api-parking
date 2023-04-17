@@ -1,0 +1,30 @@
+{
+	"info": {
+		"_postman_id": "80a70d44-4c96-4d35-8f71-03691bb239f6",
+		"name": "Parking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26929521",
+		"_collection_link": "https://restless-station-829801.postman.co/workspace/Team-Workspace~fd605a93-c8ec-4f70-8f04-ca36b6aaf59d/collection/26929521-80a70d44-4c96-4d35-8f71-03691bb239f6?action=share&creator=26929521&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "feat: Listado de autos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "feat:Registrar un auto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
